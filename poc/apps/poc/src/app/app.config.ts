@@ -1,7 +1,7 @@
 import { ApplicationConfig } from '@angular/core';
 import { provideRouter } from '@angular/router';
-import { appRoutes } from './app.routes';
+import { pocRoutes } from '@poc/poc/feature-shell';
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(appRoutes)],
+  providers: [provideRouter(pocRoutes)],
 };

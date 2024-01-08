@@ -14,7 +14,12 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@poc/poc/feature-shell": ["libs/poc/feature-shell/src/index.ts"],
+      "@poc/poc/well": ["libs/poc/well/src/index.ts"],
+      "@poc/shared/bj-footer": ["libs/shared/bj-footer/src/index.ts"],
+      "@poc/shared/bj-header": ["libs/shared/bj-header/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
