@@ -17,7 +17,20 @@
         "tsConfig": "apps/poc/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": ["apps/poc/src/favicon.ico", "apps/poc/src/assets"],
-        "styles": ["apps/poc/src/styles.scss"],
+        "styles": [
+          "node_modules/primeng/resources/primeng.css",
+          "apps/poc/src/styles.scss",
+          {
+            "input": "libs/styles/bj/themes/material/material-light/compact/indigo/theme.scss",
+            "inject": false,
+            "bundleName": "material-indigo-light"
+          },
+          {
+            "input": "libs/styles/bj/themes/material/material-dark/compact/indigo/theme.scss",
+            "inject": false,
+            "bundleName": "material-indigo-dark"
+          }
+        ],
         "scripts": []
       },
       "configurations": {
