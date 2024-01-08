@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@poc/poc/well": ["libs/poc/well/src/index.ts"],
+      "@poc/shared/bj-footer": ["libs/shared/bj-footer/src/index.ts"],
+      "@poc/shared/bj-header": ["libs/shared/bj-header/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
