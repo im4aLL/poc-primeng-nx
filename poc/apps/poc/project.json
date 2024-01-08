@@ -7,12 +7,12 @@
   "tags": [],
   "targets": {
     "build": {
-      "executor": "@angular-devkit/build-angular:application",
+      "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/apps/poc",
         "index": "apps/poc/src/index.html",
-        "browser": "apps/poc/src/main.ts",
+        "main": "apps/poc/src/main.ts",
         "polyfills": ["zone.js"],
         "tsConfig": "apps/poc/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
@@ -37,9 +37,12 @@
           "outputHashing": "all"
         },
         "development": {
+          "buildOptimizer": false,
           "optimization": false,
+          "vendorChunk": true,
           "extractLicenses": false,
-          "sourceMap": true
+          "sourceMap": true,
+          "namedChunks": true
         }
       },
       "defaultConfiguration": "production"
@@ -76,8 +79,7 @@
     "serve-static": {
       "executor": "@nx/web:file-server",
       "options": {
-        "buildTarget": "poc:build",
-        "staticFilePath": "dist/apps/poc/browser"
+        "buildTarget": "poc:build"
       }
     }
   }
