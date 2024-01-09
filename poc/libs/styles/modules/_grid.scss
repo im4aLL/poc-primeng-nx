@@ -91,7 +91,7 @@ $grid-xxlarge-gutter: rem(math.div($default-grid-gutter, 2)) !default;
 
         .small-pull-#{$i} {
             position: relative;
-            left: -math.percentage(math.div($i, $grid-column-count));
+            left: -(math.percentage(math.div($i, $grid-column-count)));
         }
 
         .small-push-#{$i} {
@@ -112,7 +112,7 @@ $grid-xxlarge-gutter: rem(math.div($default-grid-gutter, 2)) !default;
 
             .medium-pull-#{$i} {
                 position: relative;
-                left: -math.percentage(math.div($i, $grid-column-count));
+                left: -(math.percentage(math.div($i, $grid-column-count)));
             }
 
             .medium-push-#{$i} {
@@ -134,7 +134,7 @@ $grid-xxlarge-gutter: rem(math.div($default-grid-gutter, 2)) !default;
 
             .large-pull-#{$i} {
                 position: relative;
-                left: -math.percentage(math.div($i, $grid-column-count));
+                left: -(math.percentage(math.div($i, $grid-column-count)));
             }
 
             .large-push-#{$i} {
@@ -156,7 +156,7 @@ $grid-xxlarge-gutter: rem(math.div($default-grid-gutter, 2)) !default;
 
             .xxlarge-pull-#{$i} {
                 position: relative;
-                left: -math.percentage(math.div($i, $grid-column-count));
+                left: -(math.percentage(math.div($i, $grid-column-count)));
             }
 
             .xxlarge-push-#{$i} {

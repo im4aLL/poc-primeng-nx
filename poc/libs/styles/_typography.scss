@@ -93,10 +93,10 @@ $text-dimmed-color: darken(map-get($colors, light), 30%) !default;
     }
 
     a {
-        color: color(link);
+        color: color(primary);
 
         &:hover {
-            color: color(primary);
+            color: lighten(color(primary), 20%);
         }
     }
 
@@ -223,7 +223,7 @@ $text-dimmed-color: darken(map-get($colors, light), 30%) !default;
 
     kbd {
         @extend code;
-        background: lighten(color(info), 20%);
-        border: rem(1) solid color(info);
+        background: lighten(color(warning), 20%);
+        border: rem(1) solid color(warning);
     }
 }

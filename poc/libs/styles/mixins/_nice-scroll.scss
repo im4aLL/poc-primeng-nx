@@ -1,7 +1,4 @@
-@mixin nice-scroll(
-    $trackColor: lighten(color(tertiary), 20%),
-    $scrollbarColor: color(primary)
-) {
+@mixin nice-scroll($trackColor: lighten(color(primary), 20%), $scrollbarColor: color(primary)) {
     &::-webkit-scrollbar-track {
         background-color: $trackColor;
     }
