@@ -6,7 +6,6 @@ import { RouterModule } from '@angular/router';
   imports: [RouterModule],
   selector: 'poc-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
 })
 export class AppComponent {
   title = 'poc';

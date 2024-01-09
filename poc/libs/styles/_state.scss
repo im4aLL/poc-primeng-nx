@@ -1,0 +1,78 @@
+@mixin aci-state() {
+    @each $breakpoint, $value in $breakpoints {
+        .show-#{$breakpoint}-only {
+            display: none;
+
+            @include breakpoint(#{$breakpoint}-only) {
+                display: block;
+            }
+        }
+
+        .show-#{$breakpoint}-up {
+            display: none;
+
+            @include breakpoint(#{$breakpoint}-up) {
+                display: block;
+            }
+        }
+
+        .hide-#{$breakpoint}-only {
+            @include breakpoint(#{$breakpoint}-only) {
+                display: hide;
+            }
+        }
+
+        .hide-#{$breakpoint}-up {
+            @include breakpoint(#{$breakpoint}-up) {
+                display: hide;
+            }
+        }
+    }
+
+    .show-xxlarge-below {
+        display: block;
+
+        @include breakpoint(xxlarge-up) {
+            display: none;
+        }
+    }
+
+    .is--clickable {
+        cursor: pointer;
+    }
+
+    .is--disabled {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+
+    .is--hide {
+        display: none;
+    }
+
+    .is--hide-on-print {
+        @media print {
+            display: none;
+        }
+    }
+
+    .is--full-width {
+        width: 100%;
+    }
+
+    .is--text-center {
+        text-align: center;
+    }
+
+    .is--text-right {
+        text-align: right;
+    }
+
+    .is--text-left {
+        text-align: left;
+    }
+
+    .is--underline {
+        text-decoration: underline;
+    }
+}

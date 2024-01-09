@@ -1,0 +1,229 @@
+$global-font-bold-weight: bold !default;
+$text-dimmed-color: darken(map-get($colors, light), 30%) !default;
+
+@mixin aci-typography() {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6 {
+        font-family: $global-base-font;
+        font-weight: $global-font-bold-weight;
+    }
+
+    h1,
+    .h1 {
+        font-size: rem(32);
+        line-height: rem(38);
+
+        @include breakpoint(large-up) {
+            font-size: rem(52);
+            line-height: rem(56);
+        }
+    }
+
+    h2,
+    .h2 {
+        font-size: rem(28);
+        line-height: rem(34);
+
+        @include breakpoint(large-up) {
+            font-size: rem(42);
+            line-height: rem(48);
+        }
+    }
+
+    h3,
+    .h3 {
+        font-size: rem(24);
+        line-height: rem(32);
+
+        @include breakpoint(large-up) {
+            font-size: rem(36);
+            line-height: rem(42);
+        }
+    }
+
+    h4,
+    .h4 {
+        font-size: rem(22);
+        line-height: rem(28);
+
+        @include breakpoint(large-up) {
+            font-size: rem(32);
+            line-height: rem(38);
+        }
+    }
+
+    h5,
+    .h5 {
+        font-size: rem(18);
+        line-height: rem(22);
+
+        @include breakpoint(large-up) {
+            font-size: rem(22);
+            line-height: rem(28);
+        }
+    }
+
+    h6,
+    .h6 {
+        font-size: rem(16);
+        line-height: rem(20);
+    }
+
+    p {
+        font-size: rem(14);
+        line-height: rem(22);
+    }
+
+    strong {
+        font-weight: bold;
+    }
+
+    em {
+        font-style: italic;
+    }
+
+    a {
+        color: color(link);
+
+        &:hover {
+            color: color(primary);
+        }
+    }
+
+    u {
+        text-decoration: underline;
+    }
+
+    small,
+    .small {
+        font-size: 80%;
+        line-height: 1.3em;
+    }
+
+    code {
+        font-family: Consolas, monaco, monospace;
+        padding: rem(2) rem(5);
+        margin: 0 rem(2);
+        font-size: 90%;
+        white-space: nowrap;
+        background: darken(color(light), 5%);
+        border: rem(1) solid darken(color(light), 10%);
+        border-radius: rem(3);
+        overflow: auto;
+        @include nice-scroll();
+    }
+
+    .dimmed {
+        color: $text-dimmed-color;
+    }
+
+    .list {
+        font-size: rem(14);
+        line-height: rem(22);
+        padding: rem(25) 0;
+        margin-left: rem(15);
+
+        li {
+            list-style: disc;
+            padding-bottom: rem(10);
+        }
+
+        ul,
+        ol {
+            margin: rem(10) 0 0 rem(30);
+        }
+    }
+
+    .list-numbered {
+        @extend .list;
+
+        li {
+            list-style: decimal;
+        }
+    }
+
+    pre {
+        code {
+            padding: rem(15);
+            display: block;
+            white-space: pre;
+            font-size: rem(14);
+            background: #fafbfc;
+            box-shadow: rgba(102, 119, 136, 0.2) 0 rem(1) rem(2) 0;
+            border: none;
+            line-height: rem(22);
+            margin-bottom: rem(20);
+            color: lighten(color(dark), 30%);
+        }
+    }
+
+    hr {
+        border: 0;
+        height: 0;
+        border-top: rem(1) solid darken(color(light), 5%);
+        border-bottom: rem(1) solid rgba(color(white), 0.3);
+        margin: rem(15) 0;
+    }
+
+    dl {
+        font-size: rem(14);
+        line-height: rem(22);
+    }
+
+    dt {
+        font-weight: $global-font-bold-weight;
+        padding: 0 0 rem(5);
+    }
+
+    dd {
+        padding: 0 0 rem(15);
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+
+        .indented-list & {
+            padding-left: rem(30);
+        }
+    }
+
+    blockquote {
+        font-size: rem(14);
+        line-height: rem(22);
+        color: darken(color(light), 50%);
+        border-left: rem(3) solid darken(color(light), 5%);
+        padding-left: rem(20);
+
+        cite {
+            &:before {
+                content: ' — ';
+            }
+
+            font-size: 80%;
+            display: block;
+            padding-top: rem(10);
+        }
+    }
+
+    abbr {
+        border-bottom: rem(1) dotted lighten(color(dark), 30%);
+        cursor: help;
+        text-decoration: none;
+    }
+
+    kbd {
+        @extend code;
+        background: lighten(color(info), 20%);
+        border: rem(1) solid color(info);
+    }
+}

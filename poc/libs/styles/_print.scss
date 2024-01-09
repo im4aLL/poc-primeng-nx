@@ -1,0 +1,9 @@
+@mixin aci-print() {
+    @media print {
+        @page {
+            margin: 0;
+        }
+
+        // todo later
+    }
+}

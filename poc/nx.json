@@ -61,7 +61,8 @@
     "@nx/angular:library": {
       "linter": "eslint",
       "unitTestRunner": "jest",
-      "projectNameAndRootFormat": "derived"
+      "projectNameAndRootFormat": "derived",
+      "style": "none"
     },
     "@nx/angular:component": {
       "style": "scss"

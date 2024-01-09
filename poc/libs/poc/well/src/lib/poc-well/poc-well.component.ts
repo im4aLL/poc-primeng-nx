@@ -16,6 +16,5 @@ import { InputTextModule } from 'primeng/inputtext';
     InputTextModule,
   ],
   templateUrl: './poc-well.component.html',
-  styleUrl: './poc-well.component.css',
 })
 export class PocWellComponent {}

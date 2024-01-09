@@ -6,6 +6,5 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './shared-bj-header.component.html',
-  styleUrl: './shared-bj-header.component.css',
 })
 export class SharedBjHeaderComponent {}
