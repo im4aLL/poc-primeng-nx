@@ -5,20 +5,49 @@ import { TabMenuModule } from 'primeng/tabmenu';
 import { AccordionModule } from 'primeng/accordion';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
+import { DialogModule } from 'primeng/dialog';
+import { InputTextModule } from 'primeng/inputtext';
+import { InputNumberModule } from 'primeng/inputnumber';
+import { DropdownModule } from 'primeng/dropdown';
+import { FormsModule } from '@angular/forms';
+import { InputTextareaModule } from 'primeng/inputtextarea';
 
 @Component({
     selector: 'poc-poc-well',
     standalone: true,
-    imports: [CommonModule, TabMenuModule, AccordionModule, ButtonModule, CardModule],
+    imports: [
+        CommonModule,
+        TabMenuModule,
+        AccordionModule,
+        ButtonModule,
+        CardModule,
+        DialogModule,
+        InputTextModule,
+        InputNumberModule,
+        DropdownModule,
+        FormsModule,
+        InputTextareaModule,
+    ],
     templateUrl: './poc-well.component.html',
 })
 export class PocWellComponent implements OnInit {
     items: MenuItem[] | undefined;
     activeItem: MenuItem | undefined;
+    isModalOpen: boolean;
+    options: any[] | undefined;
+    selectedOption: any;
 
     ngOnInit() {
         this.items = [{ label: 'Well' }, { label: 'Job' }, { label: 'Fleet Information' }, { label: 'Schedule' }];
+        this.options = [
+            { name: 'Single Blender', code: 'singleBlender' },
+            { name: 'Single Blender 2', code: 'singleBlender2' },
+        ];
 
         this.activeItem = this.items[1];
+    }
+
+    showModal() {
+        this.isModalOpen = true;
     }
 }

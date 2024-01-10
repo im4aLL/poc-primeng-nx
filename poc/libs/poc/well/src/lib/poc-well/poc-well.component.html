@@ -9,7 +9,7 @@
 <div class="bj-cta__container">
     <ul class="bj-cta__list">
         <li class="bj-cta__list-item">
-            <p-button label="Add New Job"></p-button>
+            <p-button label="Add New Job" (click)="showModal()"></p-button>
         </li>
     </ul>
 </div>
@@ -698,3 +698,254 @@
         </div>
     </p-accordionTab>
 </p-accordion>
+
+<p-dialog header="Job Information" [(visible)]="isModalOpen" [modal]="true" [style]="{ width: '700px' }">
+    <div class="form form--block">
+        <div class="row">
+            <div class="columns large-6">
+                <!-- field -->
+                <div class="form__field">
+                    <span class="p-float-label">
+                        <input pInputText id="eid" value="1000" />
+                        <label for="eid">Execution ID</label>
+                    </span>
+                </div>
+                <!-- field -->
+
+                <!-- field -->
+                <div class="form__field">
+                    <span class="p-float-label">
+                        <p-dropdown
+                            [options]="options"
+                            optionLabel="name"
+                            [showClear]="true"
+                            placeholder="Select a Job Type"
+                            [(ngModel)]="selectedOption"
+                        ></p-dropdown>
+                        <label for="eid">Job Type</label>
+                    </span>
+                </div>
+                <!-- field -->
+
+                <!-- field -->
+                <div class="form__field">
+                    <span class="p-float-label">
+                        <p-dropdown
+                            [options]="options"
+                            optionLabel="name"
+                            [showClear]="true"
+                            placeholder="Select a Well"
+                            [(ngModel)]="selectedOption"
+                        ></p-dropdown>
+                        <label for="eid">Wells Name</label>
+                    </span>
+                </div>
+                <!-- field -->
+
+                <!-- field -->
+                <div class="form__field">
+                    <span class="p-float-label">
+                        <p-dropdown
+                            [options]="options"
+                            optionLabel="name"
+                            [showClear]="true"
+                            placeholder="Select PX"
+                            [(ngModel)]="selectedOption"
+                        ></p-dropdown>
+                        <label for="eid">Primary Well Head PX</label>
+                    </span>
+                </div>
+                <!-- field -->
+
+                <!-- field -->
+                <div class="form__field">
+                    <span class="p-float-label">
+                        <p-inputNumber inputId="integeronly" />
+                        <label for="eid">Global Knockout PX</label>
+                    </span>
+                </div>
+                <!-- field -->
+            </div>
+            <div class="columns large-6">
+                <!-- field -->
+                <div class="form__field">
+                    <span class="p-float-label">
+                        <p-inputNumber inputId="integeronly" [useGrouping]="false" />
+                        <label for="eid">Stage</label>
+                    </span>
+                </div>
+                <!-- field -->
+
+                <!-- field -->
+                <div class="form__field">
+                    <span class="p-float-label">
+                        <input pInputText id="eid" value="ABC" />
+                        <label for="eid">Pad</label>
+                    </span>
+                </div>
+                <!-- field -->
+
+                <!-- field -->
+                <div class="form__field">
+                    <span class="p-float-label">
+                        <input pInputText id="eid" />
+                        <label for="eid">Fleet</label>
+                    </span>
+                </div>
+                <!-- field -->
+
+                <!-- field -->
+                <div class="form__field">
+                    <span class="p-float-label">
+                        <p-dropdown
+                            [options]="options"
+                            optionLabel="name"
+                            [showClear]="true"
+                            placeholder="Select PX"
+                            [(ngModel)]="selectedOption"
+                        ></p-dropdown>
+                        <label for="eid">Backup Well Head PX</label>
+                    </span>
+                </div>
+                <!-- field -->
+
+                <!-- field -->
+                <div class="form__field">
+                    <span class="p-float-label">
+                        <p-inputNumber inputId="integeronly" [useGrouping]="false" />
+                        <label for="eid">Operating PX</label>
+                    </span>
+                </div>
+                <!-- field -->
+            </div>
+        </div>
+
+        <div class="form__section">
+            <h6 class="form__hl">Customer Details</h6>
+
+            <div class="row">
+                <div class="columns large-6">
+                    <!-- field -->
+                    <div class="form__field">
+                        <span class="p-float-label">
+                            <input pInputText id="eid" value="John Doe" />
+                            <label for="eid">Name</label>
+                        </span>
+                    </div>
+                    <!-- field -->
+                </div>
+                <div class="columns large-6">
+                    <!-- field -->
+                    <div class="form__field">
+                        <span class="p-float-label">
+                            <input pInputText id="eid" value="4377783330" />
+                            <label for="eid">Contact</label>
+                        </span>
+                    </div>
+                    <!-- field -->
+                </div>
+                <div class="columns large-12">
+                    <!-- field -->
+                    <div class="form__field">
+                        <span class="p-float-label">
+                            <textarea rows="5" cols="30" pInputTextarea></textarea>
+                            <label for="eid">Address</label>
+                        </span>
+                    </div>
+                    <!-- field -->
+                </div>
+            </div>
+        </div>
+
+        <div class="form__section">
+            <h6 class="form__hl">Service Company</h6>
+
+            <div class="row">
+                <div class="columns large-6">
+                    <!-- field -->
+                    <div class="form__field">
+                        <span class="p-float-label">
+                            <input pInputText id="eid" value="GHJ" />
+                            <label for="eid">District</label>
+                        </span>
+                    </div>
+                    <!-- field -->
+                </div>
+                <div class="columns large-6">
+                    <!-- field -->
+                    <div class="form__field">
+                        <span class="p-float-label">
+                            <input pInputText id="eid" value="" />
+                            <label for="eid">Sales Contact</label>
+                        </span>
+                    </div>
+                    <!-- field -->
+                </div>
+                <div class="columns large-12">
+                    <!-- field -->
+                    <div class="form__field">
+                        <span class="p-float-label">
+                            <input pInputText id="eid" value="" />
+                            <label for="eid">Operation Contact</label>
+                        </span>
+                    </div>
+                    <!-- field -->
+
+                    <!-- field -->
+                    <div class="form__field">
+                        <span class="p-float-label">
+                            <textarea rows="5" cols="30" pInputTextarea></textarea>
+                            <label for="eid">Address</label>
+                        </span>
+                    </div>
+                    <!-- field -->
+                </div>
+                <div class="columns large-6">
+                    <!-- field -->
+                    <div class="form__field">
+                        <span class="p-float-label">
+                            <input pInputText id="eid" value="Matt" />
+                            <label for="eid">Engineer</label>
+                        </span>
+                    </div>
+                    <!-- field -->
+
+                    <!-- field -->
+                    <div class="form__field">
+                        <span class="p-float-label">
+                            <input pInputText id="eid" value="Doe" />
+                            <label for="eid">Engineer 2</label>
+                        </span>
+                    </div>
+                    <!-- field -->
+                </div>
+                <div class="columns large-6">
+                    <!-- field -->
+                    <div class="form__field">
+                        <span class="p-float-label">
+                            <input pInputText id="eid" value="3232334411" />
+                            <label for="eid">Engineer Phone Number</label>
+                        </span>
+                    </div>
+                    <!-- field -->
+
+                    <!-- field -->
+                    <div class="form__field">
+                        <span class="p-float-label">
+                            <input pInputText id="eid" value="76866666112" />
+                            <label for="eid">Engineer 2 Phone Number</label>
+                        </span>
+                    </div>
+                    <!-- field -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ng-template pTemplate="footer">
+        <div class="modal__footer">
+            <p-button label="Clear" [text]="true" [plain]="true"></p-button>
+            <p-button label="Save"></p-button>
+        </div>
+    </ng-template>
+</p-dialog>

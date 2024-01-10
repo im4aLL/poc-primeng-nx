@@ -75,8 +75,9 @@ $text-dimmed-color: darken(map-get($colors, light), 30%) !default;
 
     h6,
     .h6 {
-        font-size: rem(16);
-        line-height: rem(20);
+        font-size: rem(14);
+        line-height: rem(18);
+        text-transform: uppercase;
     }
 
     p {

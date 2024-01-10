@@ -16,6 +16,6 @@
         @include reset-list();
         display: flex;
         gap: rem(10);
-        justify-content: end;
+        justify-content: flex-end;
     }
 }

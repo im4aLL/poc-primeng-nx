@@ -1,24 +1,25 @@
 {
-  "compileOnSave": false,
-  "compilerOptions": {
-    "rootDir": ".",
-    "sourceMap": true,
-    "declaration": false,
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "importHelpers": true,
-    "target": "es2015",
-    "module": "esnext",
-    "lib": ["es2020", "dom"],
-    "skipLibCheck": true,
-    "skipDefaultLibCheck": true,
-    "baseUrl": ".",
-    "paths": {
-      "@poc/poc/well": ["libs/poc/well/src/index.ts"],
-      "@poc/shared/bj-footer": ["libs/shared/bj-footer/src/index.ts"],
-      "@poc/shared/bj-header": ["libs/shared/bj-header/src/index.ts"]
-    }
-  },
-  "exclude": ["node_modules", "tmp"]
+    "compileOnSave": false,
+    "compilerOptions": {
+        "rootDir": ".",
+        "sourceMap": true,
+        "declaration": false,
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "importHelpers": true,
+        "target": "es2015",
+        "module": "esnext",
+        "lib": ["es2020", "dom"],
+        "skipLibCheck": true,
+        "skipDefaultLibCheck": true,
+        "baseUrl": ".",
+        "strictPropertyInitialization": false,
+        "paths": {
+            "@poc/poc/well": ["libs/poc/well/src/index.ts"],
+            "@poc/shared/bj-footer": ["libs/shared/bj-footer/src/index.ts"],
+            "@poc/shared/bj-header": ["libs/shared/bj-header/src/index.ts"]
+        }
+    },
+    "exclude": ["node_modules", "tmp"]
 }

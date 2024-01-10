@@ -1,0 +1,7 @@
+@mixin aci-modal() {
+    .modal__footer {
+        display: flex;
+        gap: rem(10);
+        justify-content: flex-end;
+    }
+}

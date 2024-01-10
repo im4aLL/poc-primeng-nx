@@ -2,10 +2,14 @@
 @import './grid';
 @import './icon';
 @import './button';
+@import './form';
+@import './modal';
 
 @mixin aci-modules() {
     @include aci-grid();
     @include aci-icon();
     @include aci-utility();
     @include aci-button();
+    @include aci-form();
+    @include aci-modal();
 }
