@@ -1,0 +1,9 @@
+@mixin bj-header() {
+    .bj-header {
+        background-color: color(primary);
+        color: color(white);
+        font-weight: $global-font-medium-weight;
+        padding: rem(10);
+        text-transform: uppercase;
+    }
+}

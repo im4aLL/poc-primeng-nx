@@ -5,21 +5,20 @@
 @import './base';
 @import './typography';
 @import './modules';
+@import './modules/bj';
 @import './print';
 @import './state';
 
-@mixin aci-bj() {
-    // core
+@mixin aci-core() {
     @include aci-reset();
     @include aci-base();
     @include aci-typography();
-
-    // modules
-    @include aci-grid();
-    @include aci-utility();
-
-    // state
-    @include aci-state();
 }
 
-// <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path fill="#0086FF" d="M12.192 0h6.116L8.115 20H2L12.192 0Z"/></svg>
+// this mixin will be used in bj project
+@mixin aci-bj() {
+    @include aci-core();
+    @include aci-modules();
+    @include bj-modules();
+    @include aci-state();
+}

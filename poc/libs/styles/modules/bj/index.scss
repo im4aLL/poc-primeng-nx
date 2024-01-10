@@ -1,0 +1,9 @@
+@import './bj-bar';
+@import './bj-layout';
+@import './bj-header';
+
+@mixin bj-modules() {
+    @include bj-bar();
+    @include bj-layout();
+    @include bj-header();
+}

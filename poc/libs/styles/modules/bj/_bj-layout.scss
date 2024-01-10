@@ -1,0 +1,13 @@
+@mixin bj-layout() {
+    .bj-layout {
+        padding: rem(20);
+        height: 100%;
+    }
+
+    .bj-layout__body {
+        margin: rem(10) 0;
+        height: calc(100% - 90px);
+        overflow-y: auto;
+        @include nice-scroll();
+    }
+}

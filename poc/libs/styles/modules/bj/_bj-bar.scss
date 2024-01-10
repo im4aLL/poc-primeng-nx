@@ -1,0 +1,72 @@
+$bj-bar-color: color(primary) !default;
+$bj-bar-bg-color: color(white) !default;
+$bj-bar-spacer-width: rem(6) !default;
+$bj-bar-spacer-height: rem(30) !default;
+
+@mixin bj-bar() {
+    .bj-bar {
+        background: $bj-bar-bg-color;
+        border-top: rem(1) solid $bj-bar-color;
+        border-bottom: rem(1) solid $bj-bar-color;
+        height: $bj-bar-spacer-height + rem(6);
+        padding-top: rem(2);
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: rem(7);
+            width: 100%;
+            height: 100%;
+            mask-image: inline-svg(
+                '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path fill="#0086FF" d="M12.192 0h6.116L8.115 20H2L12.192 0Z"/></svg>'
+            );
+            mask-repeat: repeat-x;
+            background-color: color(secondary);
+        }
+    }
+
+    .bj-bar__header {
+        display: inline-block;
+        position: relative;
+        padding-left: rem(20);
+        background: $bj-bar-bg-color;
+
+        &:before {
+            content: '';
+            display: block;
+            width: $bj-bar-spacer-width;
+            height: $bj-bar-spacer-height;
+            background: $bj-bar-color;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            width: $bj-bar-spacer-width;
+            height: $bj-bar-spacer-height;
+            background: $bj-bar-bg-color;
+            border: rem(1) solid $bj-bar-color;
+            position: absolute;
+            left: rem(10);
+            top: 0;
+        }
+    }
+
+    .bj-bar__logo {
+        max-width: rem(40);
+        margin-top: rem(5);
+    }
+
+    .bj-bar__hl {
+        background: $bj-bar-bg-color;
+        text-transform: uppercase;
+        height: $bj-bar-spacer-height;
+        display: inline-block;
+        padding: rem(7) rem(10) 0 rem(5);
+    }
+}

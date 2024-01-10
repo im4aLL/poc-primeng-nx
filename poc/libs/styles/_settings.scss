@@ -2,11 +2,13 @@
 $global-base-font-size: 100% !default;
 $global-base-font: 'Roboto', sans-serif !default;
 $global-font-weight: 400 !default;
+$global-font-medium-weight: 500 !default;
 $global-font-bold-weight: 700 !default;
 
 // colors
 $colors: (
     primary: #002f6c,
+    secondary: #0086ff,
     warning: #fbc02d,
     success: #689f38,
     danger: #f44336,
