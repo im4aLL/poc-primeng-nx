@@ -1,0 +1,23 @@
+$button-radius: 0 !default;
+
+@mixin aci-button() {
+    .button {
+        display: inline-block;
+        font-family: $global-base-font;
+        text-decoration: none;
+        cursor: pointer;
+        border: none;
+        border-radius: $button-radius;
+        font-size: rem(14);
+        line-height: normal;
+        text-align: center;
+        padding: rem(8) rem(20) rem(10);
+        position: relative;
+        background: none;
+        @include transition('background, color');
+    }
+
+    .button--icon {
+        padding: 0;
+    }
+}

@@ -1,14 +1,15 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
-import { ButtonModule } from 'primeng/button';
-import { InputTextModule } from 'primeng/inputtext';
 import { TabMenuModule } from 'primeng/tabmenu';
+import { AccordionModule } from 'primeng/accordion';
+import { ButtonModule } from 'primeng/button';
+import { CardModule } from 'primeng/card';
 
 @Component({
     selector: 'poc-poc-well',
     standalone: true,
-    imports: [CommonModule, ButtonModule, InputTextModule, TabMenuModule],
+    imports: [CommonModule, TabMenuModule, AccordionModule, ButtonModule, CardModule],
     templateUrl: './poc-well.component.html',
 })
 export class PocWellComponent implements OnInit {

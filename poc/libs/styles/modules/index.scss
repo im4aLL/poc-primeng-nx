@@ -1,7 +1,11 @@
 @import './utility';
 @import './grid';
+@import './icon';
+@import './button';
 
 @mixin aci-modules() {
     @include aci-grid();
+    @include aci-icon();
     @include aci-utility();
+    @include aci-button();
 }

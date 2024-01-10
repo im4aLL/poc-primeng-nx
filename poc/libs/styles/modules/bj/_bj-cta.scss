@@ -1,0 +1,11 @@
+@mixin bj-cta() {
+    .bj-cta__container {
+        padding: 0 rem(20) rem(20) 0;
+        display: flex;
+        justify-content: end;
+    }
+
+    .bj-cta__list {
+        @include reset-list();
+    }
+}

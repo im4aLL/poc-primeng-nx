@@ -1,0 +1,58 @@
+$icon-size: rem(24) !default;
+$icon-small-size: rem(18) !default;
+$icon-large-size: rem(32) !default;
+$icon-extra-large-size: rem(56) !default;
+$icon-color: color(primary) !default;
+$icon-light-color: color(white) !default;
+$icon-success-color: color(success) !default;
+$icon-danger-color: color(danger) !default;
+$icon-warning-color: color(warning) !default;
+
+@mixin aci-icon() {
+    .icon {
+        display: inline-block;
+        width: $icon-size;
+        height: $icon-size;
+        background-color: $icon-color;
+        mask-repeat: no-repeat;
+        mask-position: center;
+        mask-size: contain;
+    }
+
+    .icon--small {
+        width: $icon-small-size;
+        height: $icon-small-size;
+    }
+
+    .icon--large {
+        width: $icon-large-size;
+        height: $icon-large-size;
+    }
+
+    .icon--extra-large {
+        width: $icon-extra-large-size;
+        height: $icon-extra-large-size;
+    }
+
+    .icon--light {
+        background-color: $icon-light-color;
+    }
+
+    .icon--success {
+        background-color: $icon-success-color;
+    }
+
+    .icon--danger {
+        background-color: $icon-danger-color;
+    }
+
+    .icon--warning {
+        background-color: $icon-warning-color;
+    }
+
+    // .icon--user {
+    //     mask-image: inline-svg(
+    //         '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 4c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm0 14c-2.03 0-4.43-.82-6.14-2.88a9.947 9.947 0 0 1 12.28 0C16.43 19.18 14.03 20 12 20z"/></svg>'
+    //     );
+    // }
+}

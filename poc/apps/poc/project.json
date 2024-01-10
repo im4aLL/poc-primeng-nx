@@ -19,6 +19,7 @@
         "assets": ["apps/poc/src/favicon.ico", "apps/poc/src/assets"],
         "styles": [
           "node_modules/primeng/resources/primeng.css",
+          "node_modules/primeicons/primeicons.css",
           "apps/poc/src/styles.scss",
           {
             "input": "libs/styles/bj/themes/material/material-light/compact/indigo/theme.scss",

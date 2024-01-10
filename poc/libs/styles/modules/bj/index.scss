@@ -1,9 +1,17 @@
 @import './bj-bar';
 @import './bj-layout';
 @import './bj-header';
+@import './bj-block';
+@import './bj-accordion';
+@import './bj-info';
+@import './bj-cta';
 
 @mixin bj-modules() {
     @include bj-bar();
     @include bj-layout();
     @include bj-header();
+    @include bj-block();
+    @include bj-accordion();
+    @include bj-info();
+    @include bj-cta();
 }

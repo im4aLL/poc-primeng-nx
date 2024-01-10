@@ -1,3 +1,700 @@
 <div class="bj-header">Job Management</div>
 
 <p-tabMenu [model]="items" [activeItem]="activeItem"></p-tabMenu>
+
+<h2 class="bj-block-hl">
+    <span class="bj-block-hl__text">Jobs</span>
+</h2>
+
+<div class="bj-cta__container">
+    <ul class="bj-cta__list">
+        <li class="bj-cta__list-item">
+            <p-button label="Add New Job"></p-button>
+        </li>
+    </ul>
+</div>
+
+<p-accordion [multiple]="true" [activeIndex]="[2]">
+    <p-accordionTab>
+        <ng-template pTemplate="header">
+            <div class="bj-accordion-header">
+                <div class="bj-accordion-header__col">Well001_56</div>
+                <div class="bj-accordion-header__col">
+                    <span class="bj-accordion-header__icon color-success">
+                        <i class="pi pi-check-circle"></i> Completed
+                    </span>
+                </div>
+            </div>
+        </ng-template>
+
+        <div class="bj-info__group">
+            <div class="bj-info">
+                <h3 class="bj-block-hl"><span class="bj-block-hl__text">Customer Details</span></h3>
+
+                <ul class="bj-info__list">
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Name</div>
+                            <div class="bj-info__row-secondary">John Doe</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Contact</div>
+                            <div class="bj-info__row-secondary">222 333 4567</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Address</div>
+                            <div class="bj-info__row-secondary">
+                                ABC Street <br />
+                                Texas <br />
+                                A0A 0B0
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bj-info">
+                <h3 class="bj-block-hl"><span class="bj-block-hl__text">Service Company</span></h3>
+
+                <ul class="bj-info__list">
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">District</div>
+                            <div class="bj-info__row-secondary">GHJ</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Sales Contact</div>
+                            <div class="bj-info__row-secondary">222 333 4567</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Operation Contact</div>
+                            <div class="bj-info__row-secondary">4377783330</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Address</div>
+                            <div class="bj-info__row-secondary">
+                                ABC Street <br />
+                                Texas <br />
+                                A0A 0B0
+                            </div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Engineer</div>
+                            <div class="bj-info__row-secondary">Matt</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Engineer Phone</div>
+                            <div class="bj-info__row-secondary">222 333 4567</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Engineer 2</div>
+                            <div class="bj-info__row-secondary">Cathy</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Engineer 2 Phone</div>
+                            <div class="bj-info__row-secondary">222 333 4567</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Pad Name</div>
+                            <div class="bj-info__row-secondary">ABC</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bj-info">
+                <h3 class="bj-block-hl"><span class="bj-block-hl__text">Details</span></h3>
+
+                <ul class="bj-info__list">
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Execution ID</div>
+                            <div class="bj-info__row-secondary">10001</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Stage</div>
+                            <div class="bj-info__row-secondary">60</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Type of Job</div>
+                            <div class="bj-info__row-secondary">Single Blender</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Fleet Name</div>
+                            <div class="bj-info__row-secondary">fleet-0001</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Well Name</div>
+                            <div class="bj-info__row-secondary">Well0005-x</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Primary Well Head PX</div>
+                            <div class="bj-info__row-secondary">Well Head PX</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Backup Well Head PX</div>
+                            <div class="bj-info__row-secondary">Well Head PX2</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Global Knockout PX</div>
+                            <div class="bj-info__row-secondary">10000</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Operation PX</div>
+                            <div class="bj-info__row-secondary">9000</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </p-accordionTab>
+    <p-accordionTab>
+        <ng-template pTemplate="header">
+            <div class="bj-accordion-header">
+                <div class="bj-accordion-header__col">Well001_56</div>
+                <div class="bj-accordion-header__col">
+                    <span class="bj-accordion-header__icon color-primary">
+                        <i class="pi pi-stop-circle"></i> In Progress
+                    </span>
+                </div>
+            </div>
+        </ng-template>
+
+        <div class="bj-info__group">
+            <div class="bj-info">
+                <h3 class="bj-block-hl"><span class="bj-block-hl__text">Customer Details</span></h3>
+
+                <ul class="bj-info__list">
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Name</div>
+                            <div class="bj-info__row-secondary">John Doe</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Contact</div>
+                            <div class="bj-info__row-secondary">222 333 4567</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Address</div>
+                            <div class="bj-info__row-secondary">
+                                ABC Street <br />
+                                Texas <br />
+                                A0A 0B0
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bj-info">
+                <h3 class="bj-block-hl"><span class="bj-block-hl__text">Service Company</span></h3>
+
+                <ul class="bj-info__list">
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">District</div>
+                            <div class="bj-info__row-secondary">GHJ</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Sales Contact</div>
+                            <div class="bj-info__row-secondary">222 333 4567</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Operation Contact</div>
+                            <div class="bj-info__row-secondary">4377783330</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Address</div>
+                            <div class="bj-info__row-secondary">
+                                ABC Street <br />
+                                Texas <br />
+                                A0A 0B0
+                            </div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Engineer</div>
+                            <div class="bj-info__row-secondary">Matt</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Engineer Phone</div>
+                            <div class="bj-info__row-secondary">222 333 4567</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Engineer 2</div>
+                            <div class="bj-info__row-secondary">Cathy</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Engineer 2 Phone</div>
+                            <div class="bj-info__row-secondary">222 333 4567</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Pad Name</div>
+                            <div class="bj-info__row-secondary">ABC</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bj-info">
+                <h3 class="bj-block-hl"><span class="bj-block-hl__text">Details</span></h3>
+
+                <ul class="bj-info__list">
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Execution ID</div>
+                            <div class="bj-info__row-secondary">10001</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Stage</div>
+                            <div class="bj-info__row-secondary">60</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Type of Job</div>
+                            <div class="bj-info__row-secondary">Single Blender</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Fleet Name</div>
+                            <div class="bj-info__row-secondary">fleet-0001</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Well Name</div>
+                            <div class="bj-info__row-secondary">Well0005-x</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Primary Well Head PX</div>
+                            <div class="bj-info__row-secondary">Well Head PX</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Backup Well Head PX</div>
+                            <div class="bj-info__row-secondary">Well Head PX2</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Global Knockout PX</div>
+                            <div class="bj-info__row-secondary">10000</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Operation PX</div>
+                            <div class="bj-info__row-secondary">9000</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </p-accordionTab>
+    <p-accordionTab>
+        <ng-template pTemplate="header">
+            <div class="bj-accordion-header">
+                <div class="bj-accordion-header__col">Well001_56</div>
+                <div class="bj-accordion-header__col">
+                    <span class="bj-accordion-header__icon color-danger"> <i class="pi pi-circle"></i> Pending </span>
+                </div>
+                <div class="bj-accordion-header__col">
+                    <ul class="bj-accordion-header__action">
+                        <li class="bj-accordion-header__action-item">
+                            <button class="button button--icon"><i class="pi pi-file-edit"></i></button>
+                        </li>
+                        <li class="bj-accordion-header__action-item">
+                            <button class="button button--icon"><i class="pi pi-trash"></i></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </ng-template>
+
+        <div class="bj-info__group">
+            <div class="bj-info">
+                <h3 class="bj-block-hl"><span class="bj-block-hl__text">Customer Details</span></h3>
+
+                <ul class="bj-info__list">
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Name</div>
+                            <div class="bj-info__row-secondary">John Doe</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Contact</div>
+                            <div class="bj-info__row-secondary">222 333 4567</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Address</div>
+                            <div class="bj-info__row-secondary">
+                                ABC Street <br />
+                                Texas <br />
+                                A0A 0B0
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bj-info">
+                <h3 class="bj-block-hl"><span class="bj-block-hl__text">Service Company</span></h3>
+
+                <ul class="bj-info__list">
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">District</div>
+                            <div class="bj-info__row-secondary">GHJ</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Sales Contact</div>
+                            <div class="bj-info__row-secondary">222 333 4567</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Operation Contact</div>
+                            <div class="bj-info__row-secondary">4377783330</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Address</div>
+                            <div class="bj-info__row-secondary">
+                                ABC Street <br />
+                                Texas <br />
+                                A0A 0B0
+                            </div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Engineer</div>
+                            <div class="bj-info__row-secondary">Matt</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Engineer Phone</div>
+                            <div class="bj-info__row-secondary">222 333 4567</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Engineer 2</div>
+                            <div class="bj-info__row-secondary">Cathy</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Engineer 2 Phone</div>
+                            <div class="bj-info__row-secondary">222 333 4567</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Pad Name</div>
+                            <div class="bj-info__row-secondary">ABC</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bj-info">
+                <h3 class="bj-block-hl"><span class="bj-block-hl__text">Details</span></h3>
+
+                <ul class="bj-info__list">
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Execution ID</div>
+                            <div class="bj-info__row-secondary">10001</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Stage</div>
+                            <div class="bj-info__row-secondary">60</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Type of Job</div>
+                            <div class="bj-info__row-secondary">Single Blender</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Fleet Name</div>
+                            <div class="bj-info__row-secondary">fleet-0001</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Well Name</div>
+                            <div class="bj-info__row-secondary">Well0005-x</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Primary Well Head PX</div>
+                            <div class="bj-info__row-secondary">Well Head PX</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Backup Well Head PX</div>
+                            <div class="bj-info__row-secondary">Well Head PX2</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Global Knockout PX</div>
+                            <div class="bj-info__row-secondary">10000</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Operation PX</div>
+                            <div class="bj-info__row-secondary">9000</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </p-accordionTab>
+    <p-accordionTab>
+        <ng-template pTemplate="header">
+            <div class="bj-accordion-header">
+                <div class="bj-accordion-header__col">Well001_66</div>
+                <div class="bj-accordion-header__col">
+                    <span class="bj-accordion-header__icon color-danger"> <i class="pi pi-circle"></i> Pending </span>
+                </div>
+            </div>
+        </ng-template>
+
+        <div class="bj-info__group">
+            <div class="bj-info">
+                <h3 class="bj-block-hl"><span class="bj-block-hl__text">Customer Details</span></h3>
+
+                <ul class="bj-info__list">
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Name</div>
+                            <div class="bj-info__row-secondary">John Doe</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Contact</div>
+                            <div class="bj-info__row-secondary">222 333 4567</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Address</div>
+                            <div class="bj-info__row-secondary">
+                                ABC Street <br />
+                                Texas <br />
+                                A0A 0B0
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bj-info">
+                <h3 class="bj-block-hl"><span class="bj-block-hl__text">Service Company</span></h3>
+
+                <ul class="bj-info__list">
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">District</div>
+                            <div class="bj-info__row-secondary">GHJ</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Sales Contact</div>
+                            <div class="bj-info__row-secondary">222 333 4567</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Operation Contact</div>
+                            <div class="bj-info__row-secondary">4377783330</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Address</div>
+                            <div class="bj-info__row-secondary">
+                                ABC Street <br />
+                                Texas <br />
+                                A0A 0B0
+                            </div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Engineer</div>
+                            <div class="bj-info__row-secondary">Matt</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Engineer Phone</div>
+                            <div class="bj-info__row-secondary">222 333 4567</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Engineer 2</div>
+                            <div class="bj-info__row-secondary">Cathy</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Engineer 2 Phone</div>
+                            <div class="bj-info__row-secondary">222 333 4567</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Pad Name</div>
+                            <div class="bj-info__row-secondary">ABC</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bj-info">
+                <h3 class="bj-block-hl"><span class="bj-block-hl__text">Details</span></h3>
+
+                <ul class="bj-info__list">
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Execution ID</div>
+                            <div class="bj-info__row-secondary">10001</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Stage</div>
+                            <div class="bj-info__row-secondary">60</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Type of Job</div>
+                            <div class="bj-info__row-secondary">Single Blender</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Fleet Name</div>
+                            <div class="bj-info__row-secondary">fleet-0001</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Well Name</div>
+                            <div class="bj-info__row-secondary">Well0005-x</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Primary Well Head PX</div>
+                            <div class="bj-info__row-secondary">Well Head PX</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Backup Well Head PX</div>
+                            <div class="bj-info__row-secondary">Well Head PX2</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Global Knockout PX</div>
+                            <div class="bj-info__row-secondary">10000</div>
+                        </div>
+                    </li>
+                    <li class="bj-info__list-item">
+                        <div class="bj-info__row">
+                            <div class="bj-info__row-primary">Operation PX</div>
+                            <div class="bj-info__row-secondary">9000</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </p-accordionTab>
+</p-accordion>

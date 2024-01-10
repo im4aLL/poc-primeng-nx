@@ -1,0 +1,39 @@
+@mixin bj-info() {
+    .bj-info__group {
+        display: flex;
+        gap: rem(100);
+        justify-content: space-between;
+    }
+
+    .bj-info {
+        width: 100%;
+        font-size: rem(14);
+        line-height: 1.3;
+
+        .bj-block-hl {
+            font-size: rem(12);
+        }
+
+        .bj-block-hl__text {
+            background-color: color(white);
+            border: rem(2) solid color(warning);
+            min-width: rem(100);
+        }
+    }
+
+    .bj-info__list {
+        @include reset-list();
+        column-count: 2;
+    }
+
+    .bj-info__list-item {
+        margin-bottom: rem(15);
+        break-inside: avoid-column;
+    }
+
+    .bj-info__row-primary {
+        font-weight: $global-font-medium-weight;
+        opacity: 0.5;
+        padding-bottom: rem(5);
+    }
+}
