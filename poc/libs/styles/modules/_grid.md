@@ -73,3 +73,12 @@ Offset
 	<div class="columns large-6"></div>
 </div>
 ```
+
+Pull or Push 
+
+```
+<div class="row">
+	<div class="columns large-push-6 large-6"></div>
+	<div class="columns large-pull-6 large-6"></div>
+</div>
+```
