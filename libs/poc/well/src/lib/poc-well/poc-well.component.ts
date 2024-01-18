@@ -37,17 +37,27 @@ export class PocWellComponent implements OnInit {
     options: object[] | undefined;
     selectedOption: object;
 
-    ngOnInit() {
+    /**
+     * init
+     *
+     * @returns void
+     */
+    ngOnInit(): void {
         this.items = [{ label: 'Well' }, { label: 'Job' }, { label: 'Fleet Information' }, { label: 'Schedule' }];
         this.options = [
             { name: 'Single Blender', code: 'singleBlender' },
             { name: 'Single Blender 2', code: 'singleBlender2' },
         ];
 
-        this.activeItem = this.items[1];
+        this.activeItem = { ...this.items[1] };
     }
 
-    showModal() {
+    /**
+     * Show modal
+     *
+     * @returns void
+     */
+    showModal(): void {
         this.isModalOpen = true;
     }
 }
