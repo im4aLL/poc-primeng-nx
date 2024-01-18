@@ -46,7 +46,7 @@ export class PocWellComponent implements OnInit {
         this.items = [{ label: 'Well' }, { label: 'Job' }, { label: 'Fleet Information' }, { label: 'Schedule' }];
         this.options = [
             { name: 'Single Blender', code: 'singleBlender' },
-            { name: 'Single Blender 2', code: 'singleBlender2' },
+            { name: 'Single Blender x', code: 'singleBlender2' },
         ];
 
         this.activeItem = { ...this.items[1] };

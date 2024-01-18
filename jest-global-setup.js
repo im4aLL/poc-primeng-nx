@@ -6,4 +6,4 @@ module.exports = async function globalSetup() {
             originalConsoleError(...params);
         }
     };
-}
+};
