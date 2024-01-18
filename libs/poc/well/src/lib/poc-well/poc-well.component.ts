@@ -34,8 +34,8 @@ export class PocWellComponent implements OnInit {
     items: MenuItem[] | undefined;
     activeItem: MenuItem | undefined;
     isModalOpen: boolean;
-    options: any[] | undefined;
-    selectedOption: any;
+    options: object[] | undefined;
+    selectedOption: object;
 
     ngOnInit() {
         this.items = [{ label: 'Well' }, { label: 'Job' }, { label: 'Fleet Information' }, { label: 'Schedule' }];
