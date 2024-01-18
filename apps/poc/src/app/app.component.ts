@@ -10,5 +10,5 @@ import { SharedBjHeaderComponent } from '@poc/shared/bj-header';
     templateUrl: './app.component.html',
 })
 export class AppComponent {
-    title = 'poc';
+    title = 'poc updated';
 }
